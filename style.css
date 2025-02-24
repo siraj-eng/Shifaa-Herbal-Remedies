@@ -1,0 +1,234 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --main-color: #008148;
+    --second-color: #1e3932;
+}
+
+section{
+    padding: 50px 10%;
+}
+
+img{
+    width:100%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 40px;
+}
+
+/*Mobile Navbar Styles*/
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar .active {
+    transform: translateX(0);
+    display: block;
+}
+
+.navbar li{
+    margin-right: 20px;
+}
+
+.navbar a{
+   font-size: 1rem;
+   padding: 11px 20px;
+   color: var(--second-color);
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+    color: var(--second-color);
+}
+
+.logo span{
+    font-size: large;
+    font-weight: 500;
+    font-weight: bolder;
+}
+
+.home{
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #ffffff; /* Changed background color to white */
+    gap:1rem;
+}
+
+.home-text{
+    flex: 1 1 17rem;
+}
+
+.home-img{
+    flex: 1 1 17rem;
+}
+
+.home-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.home-text h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--second-color);
+    text-transform: uppercase;
+    margin: 0.5rem 0 1.4rem;
+}
+
+.btn{
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: var(--second-color);
+}
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.heading h1{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+/* Smooth Show Text Animation */
+@keyframes showText {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        display: none; /* Hidden until activated */
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar.active {
+        display: flex;
+    }
+    .navbar li{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Mobile specific - menu icon when active (close icon) */
+#menu-icon.bx-x {
+    color: var(--main-color); /* Change the icon color when active */
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--second-bg-color);
+}
+
+.about-img{
+    width: 70vw;
+}
+
+.heading {
+    text-align: left;
+    font-size: 4rem;
+}
+
+.heading span{
+    font-size: larger;
+    font-weight: 800;
+    font-display: var(--main-color);
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.5;
+
+}
+
+.about-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.about-content p{
+    font-size: 1rem;
+    margin: 2rem 0 2rem;
+    line-height: 1.7;
+}
+
+.about-content .btn{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
