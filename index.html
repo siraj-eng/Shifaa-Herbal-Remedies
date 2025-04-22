@@ -8,57 +8,296 @@
     <link rel="stylesheet" href="style.css">
     <!-- Box icons -->
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body> 
-
-     <!-- Navbar -->
-      <header>
-        <div class="logo">Bakari<span>JACK</span></div>
-        <i class="bx bx-menu" id="menu-icon"></i> <!-- Corrected menu icon -->
+    <header>
+        <div class="logo-img">
+          <img src="WhatsApp_Image_2025-02-24_at_14.59.35-removebg-preview(3).png" alt="Herbal Remedies Logo">
+        </div>
+        <i class="bx bx-menu" id="menu-icon"></i>
         <ul class="navbar" id="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#popular">Popular</a></li>
-            <li><a href="#review">Review</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#popular">Popular</a></li>
+          <li><a href="#reviews">Reviews</a></li> 
+          <li><a href="#contacts">Contacts</a></li>
         </ul>
-       </header>
+        <!-- Dark mode toggle moved here -->
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+          <i class="bx bx-moon"></i>
+        </button>
+    </header>
 
     <!-- Home Section -->
     <section class="home" id="home">
-      <div class="home-text">
-        <span>Welcome to Nature’s Healing Touch</span>
-        <h1>Discover the Power of Herbs</h1>
-        <h2>Pure, Natural, and Sustainably Sourced</h2>
-        <a href="#" class="btn">Explore Our Herbs</a>
+        <div class="home-text animate__animated animate__fadeInLeft">
+            <span class="welcome-text">Welcome to Nature's Healing Touch</span>
+            <h1>Discover the Power of Herbs</h1>
+            <h2>Pure, Natural, and Sustainably Sourced</h2>
+            <a href="#" class="btn pulse-animate">Explore Our Herbs</a>
+        </div>
+        <div class="home-img animate__animated animate__fadeInRight">
+            <img src="five-spice-ingredient.jpg" alt="Herbal Remedies">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img animate__animated animate__fadeInLeft">
+            <img src="modern-helathy-ingredients-composition.jpg" alt="Herbal Wellness">
+        </div>
+        <div class="about-content animate__animated animate__fadeInRight">
+            <h3 class="heading">About <span>Us</span></h3>
+            <h4>Harnessing Nature's Healing Power</h4>
+            <p>
+                At <strong>Shifaa Herbal Remedies</strong>, we are passionate about bringing you the finest herbal remedies inspired by nature. 
+                Our carefully curated selection of organic herbs, teas, and natural supplements is designed to support your well-being. 
+                With a commitment to purity, sustainability, and holistic wellness, we ensure that every product is free from artificial additives 
+                and crafted to nourish your body and mind.  
+            </p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h3 class="heading animate__animated animate__fadeInDown">Our <span>Services</span></h3>
+        <div class="services-container">
+            <div class="service-box animate__animated animate__fadeInUp" style="--animate-delay: 0.1s">
+                <i class='bx bx-leaf'></i>
+                <h4>Herbal Consultations</h4>
+                <p>One-on-one sessions to recommend the right herbal remedies for your wellness journey.</p>
+                <a href="#" class="btn service-btn">Book Now</a>
+            </div>
+            <div class="service-box animate__animated animate__fadeInUp" style="--animate-delay: 0.2s">
+                <i class='bx bx-shopping-bag'></i>
+                <h4>Online Store</h4>
+                <p>Browse and purchase organic herbal products, teas, and supplements.</p>
+                <a href="#" class="btn service-btn">Shop Now</a>
+            </div>
+            <div class="service-box animate__animated animate__fadeInUp" style="--animate-delay: 0.3s">
+                <i class='bx bx-book-open'></i>
+                <h4>Educational Resources</h4>
+                <p>Learn about the benefits and uses of herbs through blogs, guides, and videos.</p>
+                <a href="#" class="btn service-btn">Read More</a>
+            </div>
+            <div class="service-box animate__animated animate__fadeInUp" style="--animate-delay: 0.4s">
+                <i class='bx bx-bowl-hot'></i>
+                <h4>Custom Blends</h4>
+                <p>Get personalized herbal mixes crafted for your specific health goals.</p>
+                <a href="#" class="btn service-btn">Order Custom</a>
+            </div>
+            <div class="service-box animate__animated animate__fadeInUp" style="--animate-delay: 0.5s">
+                <i class='bx bx-camera-movie'></i>
+                <h4>Workshops & Webinars</h4>
+                <p>Join our live sessions to gain hands-on experience with herbs and DIY remedies.</p>
+                <a href="#" class="btn service-btn">Join Now</a>
+            </div>
+            <div class="service-box animate__animated animate__fadeInUp" style="--animate-delay: 0.6s">
+                <i class='bx bx-message-detail'></i>
+                <h4>Live Chat Support</h4>
+                <p>Need help choosing a product? Our experts are here to assist you in real time.</p>
+                <a href="#" class="btn service-btn">Chat Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Popular Section-->
+    <section class="popular-section" id="popular">
+        <h2 class="section-title">Popular Herbal Remedies</h2>
+        <div class="popular-cards-wrapper">
+          
+          <div class="popular-card">
+            <img src="images/turmeric.jpg" alt="Turmeric Root">
+            <div class="card-content">
+              <h3>Turmeric</h3>
+              <p>Known for its anti-inflammatory and antioxidant properties, turmeric is widely used to support joint health and digestion.</p>
+            </div>
+          </div>
+      
+          <div class="popular-card">
+            <img src="images/moringa.jpg" alt="Moringa Leaves">
+            <div class="card-content">
+              <h3>Moringa</h3>
+              <p>Called the "miracle tree", moringa is rich in vitamins, amino acids, and antioxidants. It boosts energy and immune function.</p>
+            </div>
+          </div>
+      
+          <div class="popular-card">
+            <img src="images/ginger.jpg" alt="Ginger Root">
+            <div class="card-content">
+              <h3>Ginger</h3>
+              <p>Ginger helps relieve nausea, supports digestion, and has anti-inflammatory effects. It's also popular in detox remedies.</p>
+            </div>
+          </div>
+      
+          <div class="popular-card">
+            <img src="images/neem.jpg" alt="Neem Leaves">
+            <div class="card-content">
+              <h3>Neem</h3>
+              <p>Neem is a powerful herb used in skincare, dental care, and detox routines thanks to its antimicrobial and purifying properties.</p>
+            </div>
+          </div>
+      
+        </div>
+   </section>
+
+   <!-- Review Section -->
+   <section id="reviews" class="reviews-section">
+    <div class="reviews-header">
+      <h2>What Our Customers Say</h2>
+      <p>Real stories. Real healing. See how our natural remedies have helped people live healthier lives.</p>
+    </div>
+
+    <div class="reviews-grid" id="reviewsGrid">
+      <!-- Sample Review 1 -->
+      <div class="review-card fade-in">
+        <p class="review-text">"I’ve struggled with insomnia for years. Their herbal sleep blend worked wonders. I sleep peacefully every night now!"</p>
+        <div class="star-rating">★★★★★</div>
+        <div class="reviewer-info">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Linda Mwangi" />
+          <div>
+            <p class="reviewer-name">Linda Mwangi</p>
+            <p class="reviewer-location">Nairobi, Kenya</p>
+          </div>
+        </div>
       </div>
-      <div class="home-img">
-        <img src="five-spice-ingredient.jpg" alt="Herbal Remedies">
-       </div>
-   </section>
-
-   <!-- About Section -->
-   <section class="about" id="about">
-    <div class="about-img">
-        <img src="modern-helathy-ingredients-composition.jpg" alt="Herbal Wellness">
+    
+      <!-- Sample Review 2 -->
+      <div class="review-card fade-in">
+        <p class="review-text">"I started using the immunity booster and haven’t had a cold since. Definitely recommending to my friends."</p>
+        <div class="star-rating">★★★★☆</div>
+        <div class="reviewer-info">
+          <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="James Otieno" />
+          <div>
+            <p class="reviewer-name">James Otieno</p>
+            <p class="reviewer-location">Kisumu, Kenya</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Sample Review 3 -->
+      <div class="review-card fade-in">
+        <p class="review-text">"My digestion has improved drastically since I started their herbal detox program. I feel lighter and more energized every day."</p>
+        <div class="star-rating">★★★★★</div>
+        <div class="reviewer-info">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Peter Wanjala" />
+          <div>
+            <p class="reviewer-name">Peter Wanjala</p>
+            <p class="reviewer-location">Eldoret, Kenya</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="about-content">
-        <h3 class="heading">About <span>Us</span></h3>
-        <h4>Harnessing Nature’s Healing Power</h4>
-        <p>
-            At <strong>Shifaa Herbal Remedies</strong>, we are passionate about bringing you the finest herbal remedies inspired by nature. 
-            Our carefully curated selection of organic herbs, teas, and natural supplements is designed to support your well-being. 
-            With a commitment to purity, sustainability, and holistic wellness, we ensure that every product is free from artificial additives 
-            and crafted to nourish your body and mind.  
-        </p>
-        <a href="#" class="btn">Learn More</a>
-    </div>
+    
+    <!-- Review Submission Form -->
+    <form id="reviewForm" class="review-form">
+      <h3>Leave a Review</h3>
+      <input type="text" id="reviewerName" placeholder="Your name" required />
+      <textarea id="reviewText" placeholder="Your experience..." required></textarea>
+
+      <label>Your Rating:</label>
+      <div class="star-rating-input" id="userRating" data-rating="0">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+
+      <button type="submit">Submit Review</button>
+    </form>
    </section>
+    
+   <!--Contact Section-->
+   <section id="contact" class="contact-section">
+    <div class="contact-wrapper">
+      <div class="contact-info animate-fade-in">
+        <h2>Let's Connect</h2>
+        <p>Have questions or want to learn more about our remedies? Reach out — we’d love to hear from you.</p>
+      </div>
+        
+        <form class="contact-form animate-slide-up" action="https://formsubmit.co/wahhajsiraj16@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        
+        <input type="hidden" name="_captcha" value="false">
+         
+        <button type="submit" class="btn-contact">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+   <!--Footer Section-->
+   <footer class="earth-footer">
+    <div class="footer-wave">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="wave-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="wave-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="wave-fill"></path>
+        </svg>
+    </div>
+    
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3 class="footer-heading">Rooted in Nature</h3>
+            <div class="leaf-animation">
+                <i class='bx bx-leaf'></i>
+                <i class='bx bx-leaf'></i>
+                <i class='bx bx-leaf'></i>
+            </div>
+            <p>Harnessing ancient wisdom with modern care to bring you nature's purest remedies.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#home"><i class='bx bx-chevron-right'></i> Home</a></li>
+                <li><a href="#about"><i class='bx bx-chevron-right'></i> About</a></li>
+                <li><a href="#services"><i class='bx bx-chevron-right'></i> Services</a></li>
+                <li><a href="#popular"><i class='bx bx-chevron-right'></i> Popular</a></li>
+                <li><a href="#review"><i class='bx bx-chevron-right'></i> Reviews</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="footer-heading">Contact Us</h3>
+            <ul class="footer-contact">
+                <li><i class='bx bx-map'></i> 123 Forest Path, Green Valley</li>
+                <li><i class='bx bx-phone'></i> +254 712 345 678</li>
+                <li><i class='bx bx-envelope'></i> hello@shifaaherbals.com</li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" class="social-icon pulse"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="social-icon pulse"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="social-icon pulse"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="social-icon pulse"><i class='bx bxl-pinterest'></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="earth-spin">
+            <img src="https://cdn.pixabay.com/photo/2016/08/24/14/29/earth-1617121_960_720.png" alt="Earth" class="rotating-earth">
+        </div>
+        <p>&copy; 2025 Shifaa Herbal Remedies. All Rights Reserved.</p>
+        <div class="floating-herbs">
+            <i class='bx bxs-leaf'></i>
+            <i class='bx bxs-leaf'></i>
+            <i class='bx bxs-leaf'></i>
+        </div>
+    </div>
+</footer>
 
-   <!-- Link to external JavaScript -->
-   <script src="script.js"></script>
-
+<div class="floating-leaf"><i class='bx bxs-leaf'></i></div>
+<div class="floating-leaf" style="left:20%;top:30%;animation-delay:2s;animation-duration:18s"><i class='bx bxs-leaf'></i></div>
+<div class="floating-leaf" style="right:15%;top:40%;animation-delay:5s;animation-duration:20s"><i class='bx bxs-leaf'></i></div>
+      
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
-
